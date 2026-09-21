@@ -316,7 +316,7 @@ function logicExpression(expression, variables, startPosition) {
         if (!found.expressionAfter || found.expressionAfter.length == 0) {
             return { type: 'error', description: 'Manjka izraz desno od operacije', location: found.operationToken.location, locationEnd: found.operationToken.locationEnd };
         }
-        let rightResult = logicExpression(found.expressionBefore, variables)
+        let rightResult = logicExpression(found.expressionAfter, variables)
         if (rightResult.type == 'error') { return rightResult };
 
         if (rightResult.type != 'logicValue') {
