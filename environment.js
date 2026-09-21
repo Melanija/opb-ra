@@ -81,15 +81,70 @@ function drawRelations() {
     document.getElementById('relations').innerHTML = html;
 }
 
+//function loadDomain(domain) {
+//    var client = new XMLHttpRequest();
+//    client.open('GET', 'https://raw.githubusercontent.com/Melanija/opb-ra/main/' + domain + '.js');
+//client.onreadystatechange = function() {
+//       let js = client.responseText;
+        // console.log(js);
+//        eval(js);
+//        describeRelations();
+//    }
+//    client.send();
+//}
+
 function loadDomain(domain) {
     var client = new XMLHttpRequest();
-    client.open('GET', 'https://raw.githubusercontent.com/Melanija/opb-ra/main/' + domain + '.js');
+
+    let url =
+        'https://raw.githubusercontent.com/Melanija/opb-ra/main/' +
+        domain +
+        '.js';
+
+    console.log('Loading domain:', domain);
+    console.log('URL:', url);
+
+    client.open('GET', url);
+
     client.onreadystatechange = function() {
+
+        if (client.readyState !== 4) {
+            return;
+        }
+
+        console.log('HTTP status:', client.status);
+
+        if (client.status !== 200) {
+            console.error('Domain load failed:', domain);
+            console.error(client.responseText);
+
+            alert(
+                'Napaka pri nalaganju domene "' +
+                domain +
+                '". Preveri ime datoteke in GitHub repozitorij.'
+            );
+            return;
+        }
+
         let js = client.responseText;
-        // console.log(js);
-        eval(js);
-        describeRelations();
-    }
+
+        console.log('Domain loaded successfully.');
+
+        try {
+            eval(js);
+            describeRelations();
+        }
+        catch (err) {
+            console.error('Error in domain file:', domain);
+            console.error(err);
+            alert(
+                'Napaka v JavaScript datoteki domene "' +
+                domain +
+                '". Poglej Console (F12).'
+            );
+        }
+    };
+
     client.send();
 }
 
