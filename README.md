@@ -1,8 +1,8 @@
 # NORA: Napredno Orodje za Relacijsko Algebro
 
-Dobrodošli v NORA, vašem pomočniku za učinkovito pisanje in preverjanje poizvedb relacijske algebre. NORA je oblikovana za olajšano učenje in ocenjevanje poizvedb relacijske algebre v okviru predmeta osnove podatkovnih baz.
+NORA predstavlja podporno okolje za oblikovanje, preverjanje in vrednotenje poizvedb relacijske algebre. Namenjena je spodbujanju učinkovitejšega učenja ter boljšega razumevanja konceptov relacijskih podatkovnih baz v okviru predmeta Osnove podatkovnih baz.
 
-**Interaktivno Učenje:** Pišite in sproti izvajajte poizvedbe relacijske algebre.
+**Interaktivno Učenje:** Zagotavlja interaktivno okolje za oblikovanje, izvajanje in analizo poizvedb relacijske algebre.
 
 ### Predpogoji
 - Spletni brskalnik z omogočeno podporo za JavaScript
