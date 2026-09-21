@@ -83,7 +83,7 @@ function drawRelations() {
 
 function loadDomain(domain) {
     var client = new XMLHttpRequest();
-    client.open('GET', 'https://raw.githubusercontent.com/TimotejK/OPB-LA/main/' + domain + '.js');
+    client.open('GET', 'https://raw.githubusercontent.com/Melanija/opb-ra/main/' + domain + '.js');
     client.onreadystatechange = function() {
         let js = client.responseText;
         // console.log(js);
