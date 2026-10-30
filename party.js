@@ -61,10 +61,10 @@ relations = [
         ]
     },
     {
-        name: 'organizira',
+        name: 'prireja',
         header: ['OID', 'ZID'],
         types: ['number', 'number'],
-        shortName: 'g',
+        shortName: 'p',
         data: [
             [1, 1],
             [1, 2],
