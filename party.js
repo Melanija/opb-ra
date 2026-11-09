@@ -25,7 +25,8 @@ relations = [
             [4, "Luka", "house"],
             [5, "Nika", "trance"],
             [6, "Miha", "techno"],
-            [7, "Eva", "house"]
+            [7, "Eva", "house"],
+            [8, "Nik", "pop"] //Dodano
         ]
     },
     {
@@ -70,7 +71,8 @@ relations = [
             [1, "Nina"],
             [2, "Peter"],
             [3, "Maja"],
-            [4, "Jan"]
+            [4, "Jan"],
+            [5, "Tim"] //Dodano
         ]
     },
     {
