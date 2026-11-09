@@ -10,7 +10,8 @@ relations = [
             [3, "Beach Party", "2026-07-20", "Koper"],
             [4, "Student Party", "2026-07-25", "Ljubljana"],
             [5, "House Evening", "2026-08-01", "Ljubljana"],
-            [6, "Summer Closing", "2026-08-10", "Portorož"]
+            [6, "Summer Closing", "2026-08-10", "Portorož"],
+            [7, "Trance Party", "2026-08-20", "Celje"] //dodano
         ]
     },
     {
@@ -59,7 +60,8 @@ relations = [
             [5, 2, "21:00"],
             [5, 4, "23:00"],
             [6, 1, "20:00"],
-            [6, 3, "22:00"]
+            [6, 3, "22:00"],
+            [7, 5, "22:00"] //dodano 
         ]
     },
     {
@@ -72,7 +74,9 @@ relations = [
             [2, "Peter"],
             [3, "Maja"],
             [4, "Jan"],
-            [5, "Tim"] //Dodano
+            //Dodano
+            [5, "Tim"], 
+            [6, "Nejc"] 
         ]
     },
     {
@@ -94,7 +98,8 @@ relations = [
             [2, 6],
             [3, 1],
             [4, 3],
-            [4, 5]
+            [4, 5],
+            [6, 7] //dodano
         ]
     }
 ];
